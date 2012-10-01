@@ -610,14 +610,14 @@ public class CharacterData extends FieldsCharacter {
      */
     public int getAtLoginFlag() {
 
-        return atLoginFlag;
+        return this.atLoginFlag;
     }
 
     /**
      * @param atLoginFlag
      *        the atLoginFlag to set
      */
-    public void setAtLoginFlag(int atLoginFlag) {
+    public void setAtLoginFlag(final int atLoginFlag) {
 
         this.atLoginFlag = atLoginFlag;
     }

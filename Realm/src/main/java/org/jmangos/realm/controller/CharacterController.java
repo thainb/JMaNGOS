@@ -213,7 +213,7 @@ public class CharacterController {
             characterData.initBitsForCollections();
 
             for (final Stats stat : Stats.values()) {
-                int statValue = playerLevelInfo.getStats(stat);
+                final int statValue = playerLevelInfo.getStats(stat);
                 characterData.setStat(stat, statValue);
                 characterData.setCreateStat(stat, statValue);
             }
@@ -262,7 +262,7 @@ public class CharacterController {
                     this.playerLevelStorages.get(characterData.getRace(), characterData.getClazz(),
                             characterData.getLevel());
             for (final Stats stat : Stats.values()) {
-                int statValue = playerLevelInfo.getStats(stat);
+                final int statValue = playerLevelInfo.getStats(stat);
                 characterData.setStat(stat, statValue);
                 characterData.setCreateStat(stat, statValue);
             }
